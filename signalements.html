@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Signalements citoyens | Mermoz-Sacré-Cœur en ligne</title>
+
+  <meta
+    name="description"
+    content="Signaler un problème dans votre quartier à la mairie de Mermoz-Sacré-Cœur : éclairage, propreté, voirie, espace public ou cadre de vie."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="Accueil">
+      <img src="assets/logo-mairie.png" alt="Logo Commune de Mermoz-Sacré-Cœur" class="brand-logo" />
+      <span class="brand-text">Mermoz-Sacré-Cœur<br />en ligne</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-menu">
+      <a href="index.html">Accueil</a>
+      <a href="demarches.html">Démarches</a>
+      <a href="signalements.html" class="active">Signalements</a>
+      <a href="actions.html">Actions & projets</a>
+      <a href="actualites-contact.html">Actualités & contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <span class="badge">Signalement citoyen</span>
+      <h1>Signaler un problème dans votre quartier</h1>
+      <p>
+        Éclairage, voirie, propreté, encombrement ou cadre de vie :
+        transmettez une demande à la mairie en quelques étapes simples.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="eyebrow">Types de demandes</span>
+        <h2>Quel problème souhaitez-vous signaler ?</h2>
+      </div>
+
+      <div class="card-grid service-grid">
+        <article class="feature-card">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18h6" />
+              <path d="M10 22h4" />
+              <path d="M8 14a6 6 0 1 1 8 0c-.8.7-1.2 1.5-1.2 2.5H9.2c0-1-.4-1.8-1.2-2.5z" />
+            </svg>
+          </span>
+          <h3>Éclairage public</h3>
+          <p>Lampadaire en panne, zone sombre ou problème de visibilité.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 7h12" />
+              <path d="M9 7V5h6v2" />
+              <path d="M8 7l1 14h6l1-14" />
+              <path d="M10 11v6" />
+              <path d="M14 11v6" />
+            </svg>
+          </span>
+          <h3>Propreté</h3>
+          <p>Dépôt d’ordures, insalubrité ou espace à nettoyer.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 22l3-20" />
+              <path d="M17 22L14 2" />
+              <path d="M9 8h6" />
+              <path d="M8 14h8" />
+              <path d="M6 22h12" />
+            </svg>
+          </span>
+          <h3>Voirie</h3>
+          <p>Route abîmée, trou, trottoir dégradé ou accès difficile.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 20h16" />
+              <path d="M6 20V9l6-4 6 4v11" />
+              <path d="M9 20v-6h6v6" />
+            </svg>
+          </span>
+          <h3>Espace public</h3>
+          <p>Occupation gênante, encombrement ou problème sur une place publique.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21V9" />
+              <path d="M12 9C8 9 5 6.5 5 3c4 0 7 2.5 7 6z" />
+              <path d="M12 12c4 0 7-2.5 7-6-4 0-7 2.5-7 6z" />
+              <path d="M5 21h14" />
+            </svg>
+          </span>
+          <h3>Cadre de vie</h3>
+          <p>Nuisance, danger ou situation qui gêne les habitants.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 8v4" />
+              <path d="M12 16h.01" />
+            </svg>
+          </span>
+          <h3>Autre demande</h3>
+          <p>Une remarque ou un besoin à transmettre à la mairie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft-section">
+      <div class="section-heading">
+        <span class="eyebrow">Formulaire</span>
+        <h2>Envoyer un signalement</h2>
+      </div>
+
+      <form class="demo-form">
+        <label>
+          Nom complet
+          <input type="text" placeholder="Votre nom" />
+        </label>
+
+        <label>
+          Numéro de téléphone
+          <input type="tel" placeholder="+221 ..." />
+        </label>
+
+        <label>
+          Quartier concerné
+          <select>
+            <option>Choisir un quartier</option>
+            <option>Mermoz</option>
+            <option>Sacré-Cœur</option>
+            <option>Sicap Karak</option>
+            <option>Sicap Baobab</option>
+            <option>Cité Keur Gorgui</option>
+            <option>Autre zone de la commune</option>
+          </select>
+        </label>
+
+        <label>
+          Type de problème
+          <select>
+            <option>Choisir une catégorie</option>
+            <option>Éclairage public</option>
+            <option>Propreté</option>
+            <option>Voirie</option>
+            <option>Espace public</option>
+            <option>Cadre de vie</option>
+            <option>Autre demande</option>
+          </select>
+        </label>
+
+        <label>
+          Description du problème
+          <textarea rows="5" placeholder="Décrivez brièvement la situation..."></textarea>
+        </label>
+
+        <label>
+          Ajouter une photo
+          <input type="file" />
+        </label>
+
+        <button type="button" class="btn btn-primary">Envoyer le signalement</button>
+
+        <p class="form-note">
+          Démo : ce formulaire pourra être relié à un email officiel, à WhatsApp
+          ou à un tableau de suivi interne selon l’organisation de la mairie.
+        </p>
+      </form>
+    </section>
+
+    <section class="section mayor-card">
+      <div>
+        <span class="eyebrow">Proximité</span>
+        <h2>Votre signalement compte</h2>
+        <p>
+          Chaque demande permet à la mairie de mieux suivre les problèmes récurrents,
+          d’identifier les zones concernées et d’organiser les interventions selon les priorités.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Commune de Mermoz-Sacré-Cœur — Démo de plateforme communale.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
