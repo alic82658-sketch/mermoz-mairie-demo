@@ -42,7 +42,8 @@
       <h1>Signaler un problème dans votre quartier</h1>
       <p>
         Éclairage, voirie, propreté, encombrement ou cadre de vie :
-        transmettez une demande à la mairie en quelques étapes simples.
+        transmettez une demande claire à la mairie. Les signalements peuvent ensuite être
+        classés, priorisés et orientés vers le service concerné.
       </p>
     </section>
 
@@ -138,7 +139,30 @@
         <h2>Envoyer un signalement</h2>
       </div>
 
-      <form class="demo-form">
+      <div class="timeline-grid mini-process">
+        <article>
+          <strong>1</strong>
+          <h3>Réception</h3>
+          <p>La demande est enregistrée avec le quartier et la catégorie.</p>
+        </article>
+        <article>
+          <strong>2</strong>
+          <h3>Qualification</h3>
+          <p>La mairie vérifie les informations et le degré d’urgence.</p>
+        </article>
+        <article>
+          <strong>3</strong>
+          <h3>Transmission</h3>
+          <p>Le signalement est envoyé au service compétent.</p>
+        </article>
+        <article>
+          <strong>4</strong>
+          <h3>Suivi</h3>
+          <p>Les demandes peuvent être suivies dans un tableau interne.</p>
+        </article>
+      </div>
+
+      <form class="signalement-form">
         <label>
           Nom complet
           <input type="text" placeholder="Votre nom" />
@@ -163,6 +187,11 @@
         </label>
 
         <label>
+          Localisation précise
+          <input type="text" placeholder="Rue, repère, bâtiment ou point connu" />
+        </label>
+
+        <label>
           Type de problème
           <select>
             <option>Choisir une catégorie</option>
@@ -176,8 +205,18 @@
         </label>
 
         <label>
+          Niveau d’urgence
+          <select>
+            <option>Choisir le niveau d’urgence</option>
+            <option>Faible — information à suivre</option>
+            <option>Moyen — intervention souhaitée</option>
+            <option>Urgent — risque ou danger signalé</option>
+          </select>
+        </label>
+
+        <label>
           Description du problème
-          <textarea rows="5" placeholder="Décrivez brièvement la situation..."></textarea>
+          <textarea rows="5" placeholder="Décrivez brièvement la situation, depuis quand elle existe et ce qu’elle provoque..."></textarea>
         </label>
 
         <label>
@@ -188,8 +227,8 @@
         <button type="button" class="btn btn-primary">Envoyer le signalement</button>
 
         <p class="form-note">
-          Démo : ce formulaire pourra être relié à un email officiel, à WhatsApp
-          ou à un tableau de suivi interne selon l’organisation de la mairie.
+          Après validation, ce formulaire pourra être relié à un email officiel,
+          à WhatsApp, à Google Sheets, Airtable ou à un tableau de suivi interne.
         </p>
       </form>
     </section>
@@ -207,7 +246,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Commune de Mermoz-Sacré-Cœur — Démo de plateforme communale.</p>
+    <p>© 2026 Commune de Mermoz-Sacré-Cœur — Tous droits réservés.</p>
   </footer>
 
   <script src="script.js"></script>
